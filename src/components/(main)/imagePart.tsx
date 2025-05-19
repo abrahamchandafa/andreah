@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import styles from "./main.module.css"
 
 function ImagePart() {
   return (
-      <div className="relative w-full h-[800px]">
-        <Image
+      <div className={`${styles.andreahCol} relative w-full h-[800px]`}>
+        {/* <Image
           src="/andreah1.jpg"
           alt="Andrea Hosking"
           fill
           style={{ objectFit: "cover" }}
           className="z-0"
-        />
+        /> */}
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
           <h1 className="text-white text-9xl font-bold">ANDREA HOSKING</h1>
           <h1 className="text-amber-700 text-9xl font-bold">ANDREA HOSKING</h1>
