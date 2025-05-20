@@ -1,12 +1,42 @@
-.andreahCol {
-    background-color: #0a0a0a;
+.header {
+  width: 100%;
+  padding: 0 2rem;
+  height: 100px;
+  border-bottom: 1px solid #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 50;
+}
+
+/* Static position: pushes content down */
+.static {
+  position: static;
+  background-color: #0a0a0a;
+  opacity: 1;
+}
+
+/* Scrolled state: fixed + translucent */
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(8px);
+  opacity: 0.95;
+}
+
+.andreahNav {
+  display: flex;
+  justify-content: center;
 }
 
 .andreahNav > * {
-    padding: 30px 30px;
-    font-size: larger;
+  padding: 30px 20px;
+  font-size: larger;
 }
 
 .andreahP {
- font-size: xx-large;
+  font-size: xx-large;
 }
