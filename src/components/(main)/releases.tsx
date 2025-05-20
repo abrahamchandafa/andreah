@@ -34,7 +34,7 @@ function Releases() {
       </BlurFade>
 
       <BlurFade
-        delay={1}
+        delay={0.1}
         duration={1}
         direction="left"
         offset={300}

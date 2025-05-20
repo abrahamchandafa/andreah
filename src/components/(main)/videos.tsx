@@ -18,7 +18,7 @@ function Videos() {
       className={`${styles.andreahCol} relative min-h-screen inset-0 z-10 px-7`}
     >
       <BlurFade
-        delay={0.5}
+        delay={0.1}
         duration={1}
         direction="right"
         offset={300}

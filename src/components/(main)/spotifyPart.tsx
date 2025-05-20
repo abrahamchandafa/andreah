@@ -9,7 +9,7 @@ function Spotify() {
       className={`${styles.andreahCol} inset-0 flex flex-col items-center justify-center z-10 px-7`}
     >
       <BlurFade
-        delay={0.5}
+        delay={0.1}
         duration={1}
         direction="right"
         offset={300}
