@@ -1,10 +1,10 @@
 
 import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
 import ImagePart from "@/components/(main)/imagePart";
 import Spotify from "@/components/(main)/spotifyPart";
 import Releases from "@/components/(main)/releases";
 import Videos from "@/components/(main)/videos";
+import Footer2 from "@/components/footer/footer2";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <Spotify />
         <Videos />
       </main>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }
