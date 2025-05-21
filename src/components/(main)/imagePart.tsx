@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./main.module.css";
-import {RetroGrid} from "@/lib/retro";
+//import {RetroGrid} from "@/lib/retro";
 
 function ImagePart() {
   return (
     <div className={`${styles.andreahCol} relative w-full h-[800px]`}>
       <div className="relative h-[800px] w-full overflow-hidden">
-        <RetroGrid />
+        {/* <RetroGrid /> */}
       </div>
       <Image
           src="/andreah3.webp"

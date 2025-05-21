@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import styles from "./main.module.css";
 import { BlurFade } from "@/lib/blurfade";
@@ -6,7 +7,7 @@ import { BorderBeam } from "@/lib/borderBeam";
 function Spotify() {
   return (
     <div
-      className={`${styles.andreahCol} inset-0 flex flex-col items-center justify-center z-10 px-7`}
+      className={`${styles.andreahCol} inset-0 flex flex-col items-center justify-center z-10 px-7 overflow-hidden`}
     >
       <BlurFade
         delay={0.1}
@@ -31,7 +32,7 @@ function Spotify() {
             style={{ borderRadius: "12px" }}
             src="https://open.spotify.com/embed/artist/02yssJvjMJdJ3nueVhig4j?utm_source=generator&theme=0"
             width="1500px"
-            height="752"
+            height="752px"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
