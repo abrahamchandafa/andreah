@@ -20,8 +20,8 @@ function Releases() {
   return (
     <div className={`${styles.andreahCol} relative min-h-screen inset-0 z-10 px-7`}>
       <BlurFade
-        delay={0.5}
-        duration={1}
+        delay={0.1}
+        duration={0.2}
         direction="right"
         offset={300}
         inView={true}
@@ -34,8 +34,8 @@ function Releases() {
       </BlurFade>
 
       <BlurFade
-        delay={0.1}
-        duration={1}
+        delay={0.2}
+        duration={0.2}
         direction="left"
         offset={300}
         inView={true}
@@ -44,7 +44,7 @@ function Releases() {
           {links.map((link, index) => (
             <div
               key={index}
-              className="bg-black rounded-full overflow-hidden shadow-lg aspect-square flex items-center justify-center"
+              className="bg-black aspect-square overflow-hidden shadow-lg aspect-square flex items-center justify-center"
             >
               <div className="aspect-square relative w-full h-full">
                 <iframe

@@ -10,7 +10,7 @@ function ImagePart() {
         {/* <RetroGrid /> */}
       </div>
       <Image
-          src="/andreah3.webp"
+          src="/andreah1.jpg"
           alt="Andrea Hosking"
           fill
           style={{ objectFit: "cover" }}

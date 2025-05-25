@@ -14,26 +14,26 @@ const links = [
 
 function Videos() {
   return (
-    <div
+    <div id="WATCH"
       className={`${styles.andreahCol} relative min-h-screen inset-0 z-10 px-7`}
     >
       <BlurFade
         delay={0.1}
-        duration={1}
+        duration={0.1}
         direction="right"
         offset={300}
         inView={true}
       >
         <div className="flex justify-center py-20">
           <h1 className="text-white  text-5xl font-bold px-7 py-10">
-            POPULAR RELEASES
+            WATCH
           </h1>
         </div>
       </BlurFade>
 
       <BlurFade
-        delay={1}
-        duration={1}
+        delay={0.2}
+        duration={0.2}
         direction="left"
         offset={300}
         inView={true}
