@@ -44,7 +44,7 @@ function Releases() {
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
           {links.map((link, index) => (
             <div key={index} className="">
-              <div className="aspect-square relative w-full h-full">
+              <div className="">
                 <iframe
                   style={{"borderRadius":"12px"}}
                   src={link}

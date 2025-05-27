@@ -12,8 +12,12 @@
 
 /* Static position: pushes content down */
 .static {
-  position: static;
-  opacity: 1;
+  position: fixed;
+  opacity: 0.9;
+  top: 0;
+  backdrop-filter: blur(8px);
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.8);
 }
 
 /* Scrolled state: fixed + translucent */
