@@ -58,7 +58,7 @@ const Header: React.FC = () => {
               <JLink
                 key={label}
                 color="neutral"
-                sx={{ color: "white", fontSize: "24px" }}
+                sx={{ color: "black", fontSize: "24px" }}
                 variant="plain"
                 href={`#${label}`}
               >
@@ -132,7 +132,7 @@ const Header: React.FC = () => {
         {/* Mobile Hamburger */}
         <div className="md:hidden text-4xl">
           <IconButton variant="plain" onClick={() => setDrawerOpen(true)}>
-            <MenuIcon sx={{height: "40px", width: "40px"}} className="text-white" />
+            <MenuIcon sx={{height: "40px", width: "40px"}} className="text-black" />
           </IconButton>
         </div>
       </div>
@@ -143,11 +143,11 @@ const Header: React.FC = () => {
         onClose={() => setDrawerOpen(false)}
         anchor="right"
       >
-        <div className="p-8 bg-black h-full w-[90hw] text-white">
+        <div className="p-8 bg-white h-full w-[90hw] text-black">
           <div className="flex justify-between items-center mb-6 mx-0">
-            <p className="font-bold">ANDREAH</p>
+            <p className="font-bold text-black">ANDREAH</p>
             <IconButton variant="plain" onClick={() => setDrawerOpen(false)}>
-              <CloseIcon className="text-white" />
+              <CloseIcon className="text-black" />
             </IconButton>
           </div>
           <div className="text-5xl my-5">
@@ -159,7 +159,7 @@ const Header: React.FC = () => {
               <JLink
                 key={label}
                 color="neutral"
-                sx={{ color: "white" }}
+                sx={{ color: "black" }}
                 href="#"
                 onClick={() => setDrawerOpen(false)}
               >

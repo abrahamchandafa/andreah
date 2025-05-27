@@ -18,7 +18,7 @@ const links = [
 function Releases() {
   return (
     <div
-      className={`bg-red-950 relative min-h-screen inset-0 z-10 px-7 mb-0 pb-10`}
+      className={`bg-amber-50 relative min-h-screen inset-0 z-10 px-7 mb-0 pb-10`}
     >
       <BlurFade
         delay={0.1}
@@ -28,7 +28,7 @@ function Releases() {
         inView={true}
       >
         <div className="flex justify-center py-20">
-          <h1 className="text-white  text-5xl font-bold px-7 py-10">
+          <h1 className="text-black  text-5xl font-bold px-7 py-10">
             POPULAR RELEASES
           </h1>
         </div>
@@ -62,7 +62,7 @@ function Releases() {
         className="absolute top-0 left-0 right-0 bottom-0 z-0 w-full min-h-full"
         quantity={200}
         ease={80}
-        color="#ffffff"
+        color="#000000"
         refresh
       />
     </div>

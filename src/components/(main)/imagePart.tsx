@@ -20,7 +20,7 @@ function ImagePart() {
         {/* Mobile image */}
         <div className="block sm:hidden">
           <Image
-            src="/andreah1.jpg"
+            src="/andreah3.webp"
             alt="Andrea Hosking Mobile"
             fill
             style={{ objectFit: "cover" }}
