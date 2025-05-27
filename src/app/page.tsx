@@ -5,18 +5,12 @@ import ImagePart from "@/components/(main)/imagePart";
 import Videos from "@/components/(main)/videos";
 import Footer2 from "@/components/footer/footer2";
 import { ScrollProgress } from "@/lib/scrollProgress";
-//import { useIsMobile } from "@/hooks/useIsMobile";
 import { useEffect, useState } from "react";
 import Loader from "@/components/loader/loader";
 import Releases from "@/components/(main)/releases";
 
 export default function Home() {
-  //const isMobile = useIsMobile();
   const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   setHasMounted(true);
-  // }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -39,7 +33,7 @@ export default function Home() {
         <Releases />
       </main>
 
-      <ScrollProgress className="top-[150px]" />
+      <ScrollProgress className="top-[100px]" />
       <Footer2 />
     </div>
   );

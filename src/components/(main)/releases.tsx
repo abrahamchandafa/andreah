@@ -17,7 +17,9 @@ const links = [
 
 function Releases() {
   return (
-    <div className={`globalbg bg-red-950 relative min-h-screen inset-0 z-10 px-7 mb-0 pb-10`}>
+    <div
+      className={`globalbg bg-red-950 relative min-h-screen inset-0 z-10 px-7 mb-0 pb-10`}
+    >
       <BlurFade
         delay={0.1}
         duration={0.2}
@@ -39,25 +41,21 @@ function Releases() {
         offset={20}
         inView={true}
       >
-        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
           {links.map((link, index) => (
-            <div
-              key={index}
-              className="bg-auto overflow-hidden shadow-lg aspect-square flex items-center justify-center"
-            >
+            <div key={index} className="">
               <div className="aspect-square relative w-full h-full">
                 <iframe
+                  style={{"borderRadius":"12px"}}
                   src={link}
                   width="100%"
-                  height="100%"
+                  height="352"
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy"
-                  className="absolute top-0 left-0 w-full h-full object-cover"
                 ></iframe>
               </div>
             </div>
           ))}
-        
         </div>
       </BlurFade>
       <Particles
