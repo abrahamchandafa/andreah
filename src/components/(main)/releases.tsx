@@ -18,7 +18,7 @@ const links = [
 function Releases() {
   return (
     <div
-      className={`globalbg bg-red-950 relative min-h-screen inset-0 z-10 px-7 mb-0 pb-10`}
+      className={`bg-red-950 relative min-h-screen inset-0 z-10 px-7 mb-0 pb-10`}
     >
       <BlurFade
         delay={0.1}

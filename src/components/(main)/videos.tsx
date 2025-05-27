@@ -14,7 +14,7 @@ const links = [
 function Videos() {
   return (
     <div id="WATCH"
-      className={`globalbg relative min-h-screen inset-0 z-10 px-7`}
+      className={`bg-red-950 relative min-h-screen inset-0 z-10 px-7`}
     >
       <BlurFade
         delay={0.1}
