@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -11,13 +11,13 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -56,4 +56,8 @@ body {
   50% {background-size: 20% 100%,20% 10% ,20% 100%}
   66% {background-size: 20% 100%,20% 100%,20% 10% }
   100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+
+.globalbg {
+  background-color:#0a0a0a;
 }

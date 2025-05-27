@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./main.module.css";
 import { BlurFade } from "@/lib/blurfade";
 import { Particles } from "@/lib/particles";
 
@@ -18,12 +17,12 @@ const links = [
 
 function Releases() {
   return (
-    <div className={`${styles.andreahCol} relative min-h-screen inset-0 z-10 px-7`}>
+    <div className={`globalbg bg-red-950 relative min-h-screen inset-0 z-10 px-7 mb-0 pb-10`}>
       <BlurFade
         delay={0.1}
         duration={0.2}
-        direction="right"
-        offset={300}
+        direction="down"
+        offset={20}
         inView={true}
       >
         <div className="flex justify-center py-20">
@@ -36,15 +35,15 @@ function Releases() {
       <BlurFade
         delay={0.2}
         duration={0.2}
-        direction="left"
-        offset={300}
+        direction="down"
+        offset={20}
         inView={true}
       >
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {links.map((link, index) => (
             <div
               key={index}
-              className="bg-black aspect-square overflow-hidden shadow-lg aspect-square flex items-center justify-center"
+              className="bg-auto overflow-hidden shadow-lg aspect-square flex items-center justify-center"
             >
               <div className="aspect-square relative w-full h-full">
                 <iframe

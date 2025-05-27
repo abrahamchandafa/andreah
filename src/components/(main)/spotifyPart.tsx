@@ -1,18 +1,17 @@
 "use client"
 import React from "react";
-import styles from "./main.module.css";
 import { BlurFade } from "@/lib/blurfade";
 import { BorderBeam } from "@/lib/borderBeam";
 
 function Spotify() {
   return (
     <div
-      className={`${styles.andreahCol} inset-0 flex flex-col items-center justify-center z-10 px-7 overflow-hidden`}
+      className={`globalbg inset-0 flex flex-col items-center justify-center z-10 px-7 overflow-hidden`}
     >
       <BlurFade
         delay={0.1}
         duration={1}
-        direction="right"
+        direction="down"
         offset={300}
         inView={true}
       >
@@ -23,7 +22,7 @@ function Spotify() {
       <BlurFade
         delay={1}
         duration={1}
-        direction="left"
+        direction="down"
         offset={300}
         inView={true}
       >

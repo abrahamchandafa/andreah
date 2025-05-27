@@ -10,7 +10,7 @@ import { FaXTwitter as FaTwitter } from "react-icons/fa6";
 
 const Footer2: React.FC = () => {
   return (
-    <footer className="bg-black text-white mt-20">
+    <footer className="bg-black text-white mt-0">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 border-t border-gray-800">
         {/* About Section */}
         <div>
@@ -123,7 +123,7 @@ const Footer2: React.FC = () => {
       </div>
 
       <div className="text-center text-gray-500 text-sm py-6 border-t border-gray-800">
-        © {new Date().getFullYear()} Andreah. All rights reserved.
+        © {2025} Andreah. All rights reserved.
       </div>
     </footer>
   );

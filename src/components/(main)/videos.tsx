@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./main.module.css";
 import { BlurFade } from "@/lib/blurfade";
 import { Particles } from "@/lib/particles";
 
@@ -15,13 +14,13 @@ const links = [
 function Videos() {
   return (
     <div id="WATCH"
-      className={`${styles.andreahCol} relative min-h-screen inset-0 z-10 px-7`}
+      className={`globalbg relative min-h-screen inset-0 z-10 px-7`}
     >
       <BlurFade
         delay={0.1}
-        duration={0.1}
-        direction="right"
-        offset={300}
+        duration={0.5}
+        direction="down"
+        offset={20}
         inView={true}
       >
         <div className="flex justify-center py-20">
@@ -33,12 +32,12 @@ function Videos() {
 
       <BlurFade
         delay={0.2}
-        duration={0.2}
-        direction="left"
-        offset={300}
+        duration={0.5}
+        direction="down"
+        offset={20}
         inView={true}
       >
-        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-9xl mx-auto">
           {links.map((link, index) => (
             <div
               key={index}

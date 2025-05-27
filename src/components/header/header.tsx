@@ -30,7 +30,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`${styles.header} ${
+      className={`${styles.header} globalbg ${
         scrolled ? styles.scrolled : styles.static
       } overflow-hidden`}
     >
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
           <Image
             src="/logo.png"
             alt="Andrea Hosking"
-            width={270}
+            width={200}
             height={100}
             style={{ objectFit: "cover" }}
             className="z-0"
@@ -125,14 +125,14 @@ const Header: React.FC = () => {
           </div>
         </nav>
         
-        <div className="text-5xl">
+        <div className="text-5xl hidden md:flex">
           <a href=""><MdAccountCircle /></a>
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="md:hidden text-4xl">
           <IconButton variant="plain" onClick={() => setDrawerOpen(true)}>
-            <MenuIcon className="text-white" />
+            <MenuIcon sx={{height: "40px", width: "40px"}} className="text-white" />
           </IconButton>
         </div>
       </div>
@@ -143,13 +143,17 @@ const Header: React.FC = () => {
         onClose={() => setDrawerOpen(false)}
         anchor="right"
       >
-        <div className="p-4 bg-black h-full w-[80vw] text-white">
-          <div className="flex justify-between items-center mb-6">
-            <p className="font-bold text-xl">ANDREAH</p>
+        <div className="p-8 bg-black h-full w-[90hw] text-white">
+          <div className="flex justify-between items-center mb-6 mx-0">
+            <p className="font-bold">ANDREAH</p>
             <IconButton variant="plain" onClick={() => setDrawerOpen(false)}>
               <CloseIcon className="text-white" />
             </IconButton>
           </div>
+          <div className="text-5xl my-5">
+          <a href=""><MdAccountCircle /></a>
+        </div>
+
           <Stack spacing={2}>
             {navLinks.map((label) => (
               <JLink

@@ -13,7 +13,6 @@
 /* Static position: pushes content down */
 .static {
   position: static;
-  background-color: #0a0a0a;
   opacity: 1;
 }
 
